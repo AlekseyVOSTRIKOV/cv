@@ -1,0 +1,57 @@
+.nav {
+  width: 100%;
+  position: absolute;
+  left: -100%;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    left: 0;
+    transition: left 0.3s ease;
+  }
+  &__link {
+    // display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid $main-color;
+  }
+}
+@media screen and (width > 1023px) {
+  .nav {
+    width: auto;
+    position: static;
+    flex-direction: row;
+    gap: 3rem;
+
+    &__link {
+      width: auto;
+      font-size: 3rem;
+      border-bottom: none;
+      padding: 1rem 2rem;
+      transition: color 0.4s ease, background-color 0.4s ease;
+
+      &:hover {
+        outline: 1px solid $main-color;
+        border-radius: 2rem;
+        background-color: $main-color;
+        color: $white-color;
+      }
+
+      &_qa {
+        outline: 1px solid $main-color;
+        border-radius: 2rem;
+        transition: color 0.4s ease, background-color 0.4s ease;
+
+        &:hover {
+          background-color: $main-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

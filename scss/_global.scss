@@ -1,0 +1,15 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: $main-color;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+}

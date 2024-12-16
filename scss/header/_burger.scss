@@ -1,0 +1,31 @@
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.burger-btn__stick {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: $main-color;
+}
+.burger-btn.active {
+  position: relative;
+  .burger-btn__stick_top {
+    position: absolute;
+    transform: rotate(45deg);
+    transition: transform .3s ease;
+  }
+  .burger-btn__stick_middle {
+    display: none;
+  }
+  .burger-btn__stick_bottom {
+    transform: rotate(-45deg);
+    transition: transform .3s ease;
+  }
+}
+@media screen and (width > 1023px) {
+  .burger-btn {
+    display: none;
+  }
+}
