@@ -45,7 +45,6 @@ input, select {
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -133,7 +132,6 @@ section {
     width: auto;
     position: static;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 3rem;
   }
   .nav__link {
@@ -238,12 +236,6 @@ section {
   border-radius: 3rem;
   padding: 2rem 3rem;
   margin-inline: auto;
-  transition: all 0.3s ease;
-}
-.hero__button:hover {
-  background-color: transparent;
-  color: #07203F;
-  outline: 1px solid #07203F;
 }
 
 @media screen and (width > 1023px) {
@@ -266,53 +258,6 @@ section {
   .hero__button {
     margin: 0;
   }
-}
-.card {
-  max-width: 33rem;
-  padding: 10px;
-  text-align: center;
-  background-color: #fff;
-  color: #07203F;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-}
-.card__top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.card__img {
-  width: 5rem;
-}
-.card__title {
-  font-size: 2rem;
-  font-weight: 700;
-}
-.tools {
-  background-color: #07203F;
-  color: #fff;
-}
-.tools__title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.tools__description {
-  text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 3rem;
-}
-.tools__gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
