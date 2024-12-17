@@ -11,6 +11,7 @@
 }
 .burger-btn.active {
   position: relative;
+  padding: 10px 0;
   .burger-btn__stick_top {
     position: absolute;
     transform: rotate(45deg);

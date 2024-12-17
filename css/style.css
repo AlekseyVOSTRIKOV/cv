@@ -61,21 +61,59 @@ body {
   padding-inline: 15px;
 }
 
-.logo {
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-decoration: underline;
+section {
+  padding: 30px 0;
 }
 
+@media screen and (width > 1023px) {
+  section {
+    padding: 50px 0;
+  }
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #07203F, #fff, #000, #eaded4);
+  background-size: 400% 400%;
+  animation: move 6s ease infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@media screen and (width > 1023px) {
+  .logo {
+    font-size: 2.4rem;
+  }
+}
 .nav {
   width: 100%;
   position: absolute;
   left: -100%;
-  top: 100%;
+  top: calc(100% + 1px);
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 .nav.active {
   left: 0;
@@ -134,6 +172,7 @@ body {
 
 .burger-btn.active {
   position: relative;
+  padding: 10px 0;
 }
 .burger-btn.active .burger-btn__stick_top {
   position: absolute;
@@ -162,6 +201,63 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.hero__avatar {
+  max-width: 400px;
+  border-radius: 50%;
+}
+.hero__content {
+  max-width: 540px;
+}
+.hero__title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hero__description {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.hero__button {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #07203F;
+  border-radius: 3rem;
+  padding: 2rem 3rem;
+  margin-inline: auto;
+}
+
+@media screen and (width > 1023px) {
+  .hero__wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero__avatar {
+    max-width: 500px;
+  }
+  .hero__title {
+    font-size: 4.2rem;
+    text-align: left;
+  }
+  .hero__description {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .hero__button {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
