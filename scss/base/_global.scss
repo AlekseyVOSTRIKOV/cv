@@ -1,0 +1,16 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: $font_family;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $main-black-color;
+}
+.container {
+  max-width: 117rem;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+

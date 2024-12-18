@@ -1,23 +1,35 @@
 /* _reset.scss */
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-button {
-  border: none;
-  background: none;
-  color: currentColor;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
 }
 
-a {
+a:hover {
   text-decoration: none;
-  color: currentColor;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
 }
 
 h1,
@@ -25,62 +37,165 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-size: inherit;
   font-weight: inherit;
 }
 
-img {
-  width: 100%;
-}
-
-ul {
+ul,
+ul li {
   list-style: none;
 }
 
-input, select {
-  border: none;
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
 }
 
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../fonts/RobotoMono-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../fonts/RobotoMono-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../fonts/RobotoMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../fonts/RobotoMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../../fonts/RobotoMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 html {
   font-size: 10px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
-  color: #07203F;
+  color: #000;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 117rem;
   width: 100%;
   margin-inline: auto;
-  padding-inline: 15px;
+  padding-inline: 1.5rem;
 }
 
-section {
-  padding: 30px 0;
+.nav {
+  display: none;
 }
 
-@media screen and (width > 1023px) {
-  section {
-    padding: 50px 0;
-  }
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
+.burger__stick {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+.header {
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+.header .container {
+  height: 100%;
+}
+.header__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: clamp(1.4rem, 1.3888888889vw, 2rem);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(45deg, #07203F, #fff, #000, #eaded4);
+  background-image: linear-gradient(45deg, #fff, #07203F, #cc005f);
   background-size: 400% 400%;
   animation: move 6s ease infinite;
 }
-
 @keyframes move {
   0% {
     background-position: 0 0;
@@ -98,165 +213,107 @@ section {
     background-position: 0 0;
   }
 }
-@media screen and (width > 1023px) {
-  .logo {
-    font-size: 2.4rem;
-  }
-}
-.nav {
-  width: 100%;
-  position: absolute;
-  left: -100%;
-  top: calc(100% + 1px);
-  z-index: 100;
+
+.social {
+  justify-self: flex-end;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #fff;
-}
-.nav.active {
-  left: 0;
-  transition: left 0.3s ease;
-}
-.nav__link {
-  width: 100%;
-  font-size: 2.5rem;
-  padding: 2rem 0;
-  text-align: center;
-  border-bottom: 1px solid #07203F;
+  gap: 2rem;
 }
 
-@media screen and (width > 1023px) {
-  .nav {
-    width: auto;
-    position: static;
-    flex-direction: row;
-    gap: 3rem;
-  }
-  .nav__link {
-    width: auto;
-    font-size: 3rem;
-    border-bottom: none;
-    padding: 1rem 2rem;
-    transition: color 0.4s ease, background-color 0.4s ease;
-  }
-  .nav__link:hover {
-    outline: 1px solid #07203F;
-    border-radius: 2rem;
-    background-color: #07203F;
-    color: #fff;
-  }
-  .nav__link_qa {
-    outline: 1px solid #07203F;
-    border-radius: 2rem;
-    transition: color 0.4s ease, background-color 0.4s ease;
-  }
-  .nav__link_qa:hover {
-    background-color: #07203F;
-    color: #fff;
+@media screen and (width > 690px) {
+  .social {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-.burger-btn {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+.fa-brands {
+  color: #fff;
+  font-size: 3rem;
 }
 
-.burger-btn__stick {
-  display: block;
-  width: 40px;
-  height: 2px;
-  background-color: #07203F;
-}
-
-.burger-btn.active {
+.hero {
+  background: url("../../../images/hero-bg.jpg") center/cover no-repeat;
+  height: calc(100vh - 50px);
   position: relative;
-  padding: 10px 0;
 }
-.burger-btn.active .burger-btn__stick_top {
+.hero:before {
+  content: "";
   position: absolute;
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
 }
-.burger-btn.active .burger-btn__stick_middle {
-  display: none;
+.hero .container {
+  height: 100%;
 }
-.burger-btn.active .burger-btn__stick_bottom {
-  transform: rotate(-45deg);
-  transition: transform 0.3s ease;
-}
-
-@media screen and (width > 1023px) {
-  .burger-btn {
-    display: none;
-  }
-}
-.header {
-  position: relative;
-  padding: 30px 0;
-  border-bottom: 1px solid #07203F;
-}
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .hero__wrapper {
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: center;
   align-items: center;
 }
-.hero__avatar {
-  max-width: 400px;
-  border-radius: 50%;
-}
-.hero__content {
-  max-width: 540px;
+.hero__subtitle {
+  color: #cc005f;
+  font-weight: 200;
+  font-size: clamp(2rem, 1.5625vw, 3rem);
+  margin-bottom: 1rem;
 }
 .hero__title {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.hero__description {
-  font-size: 2.6rem;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  text-align: justify;
-}
-.hero__button {
-  display: block;
-  font-size: 2rem;
-  text-transform: uppercase;
   color: #fff;
-  background-color: #07203F;
-  border-radius: 3rem;
-  padding: 2rem 3rem;
-  margin-inline: auto;
+  font-size: clamp(2.3rem, 2.6041666667vw, 5rem);
+  margin-bottom: 2rem;
+}
+.hero__suptitle {
+  color: #fff;
+  font-weight: 100;
+  font-size: clamp(2rem, 1.5625vw, 3rem);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+.hero__sep {
+  transform: rotate(90deg);
+}
+.hero__link {
+  display: inline-block;
+  margin-bottom: 6rem;
+  padding: 1rem 3rem;
+  font-size: clamp(1.6rem, 1.0416666667vw, 2rem);
+  font-weight: 200;
+  color: #cc005f;
+  border: 1px solid #cc005f;
 }
 
-@media screen and (width > 1023px) {
-  .hero__wrapper {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (width > 768px) {
+  .hero__suptitle {
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 5rem;
   }
-  .hero__avatar {
-    max-width: 500px;
+  .hero__sep {
+    transform: none;
   }
-  .hero__title {
-    font-size: 4.2rem;
-    text-align: left;
+  .hero__link {
+    transition: color 0.5s ease, border-color 0.5s ease;
   }
-  .hero__description {
-    font-size: 3rem;
-    text-align: left;
+  .hero__link:hover {
+    color: #fff;
+    border-color: #fff;
   }
-  .hero__button {
-    margin: 0;
+}
+@media screen and (width > 1110px) {
+  .hero__suptitle {
+    margin-bottom: 10rem;
   }
 }
 
