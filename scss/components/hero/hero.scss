@@ -2,7 +2,7 @@
 @import 'fa';
 
 .hero {
-  background: url('../../../images/hero-bg.jpg') center / cover no-repeat;
+  background: url('../images/hero-bg.jpg') center / cover no-repeat;
   height: calc(100vh - $heigth_header_xs);
   position: relative;
   // display: flex;
