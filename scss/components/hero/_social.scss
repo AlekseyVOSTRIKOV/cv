@@ -1,0 +1,17 @@
+.social {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.social__link {
+}
+
+@media screen and (width > $max_widht_md) {
+  .social {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

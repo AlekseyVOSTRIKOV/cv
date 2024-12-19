@@ -1,165 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="AlekseyVOSTRIKOV" content="width=device-width, initial-scale=1.0">
-    <title>Резюме QA Инженера</title> 
-    <link rel="icon" href="https://yt3.googleusercontent.com/ytc/AIf8zZQhJJKLlKFz3_sZ2hcq4NxjarmM-h2N4k7rXjsKKg=s900-c-k-c0x00ffffff-no-rj" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #c9daf8;
-        }
-        header {
-            background-color: #35424a;
-            color: #c9daf8;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-            padding-bottom: 60px; /* Отступ для футера */
-        }
-        .profile {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #FFFF00;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        .tools {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .tool {
-            background-color: #ffffff;
-            border: 1px solid #66FFCC;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .tool img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-        }
-        footer {
-            background-color: #424a35;
-            color: #d9ead3;
-            text-align: center;
-            padding: 0px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        @media (max-width: 600px) {
-            .tools {
-                flex-direction: column;
-                align-items: center;
-            }
-            .tool {
-                width: 80%;
-            }
-        }
-    </style>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png" />
+    <title>Алексей Востриков - QA инженер</title>
+    <meta property="og:title" content="Алексей Востриков - QA инженер" />
+    <meta property="og:image" content="./images/avatar.jpg" />
+    <meta
+      name="og:description"
+      content="QA инженер с 3х-летним опытом в ручном тестировании"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+    <script type="module" src="./js/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="https://github.com/AlekseyVOSTRIKOV"
+            >@AlekseyVOSTRIKOV</a
+          >
 
-    <header>
-        <h1>Востриков Алексей</h1>
-        <p>QA Инженер</p>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Проекты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="burger">
+            <div class="burger__stick burger__stick_top"></div>
+            <div class="burger__stick burger__stick_middle"></div>
+            <div class="burger__stick burger__stick_bottom"></div>
+          </button>
+        </div>
+      </div>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__wrapper-top">
+              <p class="hero__subtitle">Привет, мир!</p>
+              <h1 class="hero__title">Я - Алексей Востриков</h1>
+              <p class="hero__suptitle">
+                Software QA Engineer <span class="hero__sep">|</span> DevOps
+                Enthusiast
+              </p>
+              <a class="hero__link" href="#"
+                >Подробнее <i class="fa-solid fa-arrow-down"></i
+              ></a>
+            </div>
 
-    <div class="container">
-        <div class="profile">
-            <img src=https://sun9-50.userapi.com/impf/c852128/v852128682/a9164/ag04tc9J3QQ.jpg?size=850x850&quality=96&sign=a5b6429e9de9bbe9dc327cd4bf5bfd09&type=album alt="Фото Алексей Востриков">
-            <p>Здравствуйте! Я Востриков Алексей, QA инженер с 3х-летним опытом в ручном тестировании. Стремлюсь обеспечить качество и надежность программного обеспечения. Развиваю в себе hard и soft скилы, не сижу на месте. На данное время изучаю автоматизацию тестирования сайтов и тестирование мобильных приложений.</p>
-            <div class="social-links">
-                <a href=https://vk.com/vostrikowww target="_blank">ВКонтакте</a>
-                <a href="https://t.me/AlekseyVostrikov" target="_blank">Telegram</a>
+            <div class="social">
+              <a class="social__link" href="#">
+                <i class="fa-brands fa-vk"></i>
+              </a>
+              <a class="social__link" href="#">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a class="social__link" href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <h2>Инструменты для QA</h2>
-        <div class="tools">
-            <div class="tool">
-                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/cf/ec/45/cfec45ed-c9af-12e0-50c5-81d2d5d060f1/AppIcon-0-1x_U007emarketing-0-85-220-0-5.png/1200x630wa.png" alt="Яндекс трекер">
-                <h3>Яндекс трекер</h3>
-            </div>
-            <div class="tool">
-                <img src="https://habrastorage.org/getpro/habr/upload_files/d27/de0/b35/d27de0b35c15b696ce6163c6419941ad.png" alt="Swagger">
-                <h3>Swagger</h3>
-            </div>
-            <div class="tool">
-                <img src="https://migsoft.ru/upload/iblock/796/lhiz95v348xsj7hvqvvb4ja323qpdatj.jpg" alt="Test IT">
-                <h3>Test IT</h3>
-            </div>
-            <div class="tool">
-                <img src="https://assets.techrepublic.com/uploads/2014/02/dbeaver.splashscreen-circle.png" alt="DBeaver">
-                <h3>DBeaver</h3>
-            </div>
-            <div class="tool">
-                <img src=https://i.pinimg.com/736x/69/3b/8c/693b8c00e8efdf3305ccde8dd3f6ef2a.jpg alt=>
-                <h3>DevTools</h3>
-            </div>
-            <div class="tool">
-                <img src=https://mms.businesswire.com/media/20220831005200/en/761650/23/postman-logo-vert-2018.jpg100" alt="Postman">
-                <h3>Postman</h3>
-            </div>
-            <div class="tool">
-                <img src=https://avatars.mds.yandex.net/i?id=ad6c6c7fcf3cbb1803b53d4db5d4c06d_l-5328515-images-thumbs&n=13alt=C:\Users\eshka\Desktop\>
-                <h3> Mongo DB</h3>
-            </div>
-            <div class="tool">
-                <img src="https://avatars.mds.yandex.net/i?id=f20b18b8b87ee88a835e55a8da92b3ba_l-8710500-images-thumbs&n=13100" alt="Kibana">
-                <h3>Kibana</h3>
-            </div>
-            <div class="tool">
-                <img src="https://habrastorage.org/webt/hq/tz/1i/hqtz1i2ayqxigebdhihntdnvadm.png" alt="Jaeger">
-                <h3>Jaeger</h3>
-            </div>
-            <div class="tool">
-                <img src="https://cdn.otus.ru/media/private/99/23/postgresql_1-20219-992392.jpg?hash=bXETK3SjKhIZPSfXvVHeDw&expires=1673733723" alt="PostgreSQL">
-                <h3>PostgreSQL</h3>
-            </div>
-             <div class="tool">
-                <img src="https://i.pinimg.com/originals/c3/61/fc/c361fc8243d94e4a718044156093fa18.png" alt="Kafka">
-                <h3>Kafka</h3>
-            </div>
-            <div class="tool">
-                <img src="https://user-images.githubusercontent.com/54249736/114280689-29d14900-9a43-11eb-9ebf-93b2a88ddd04.jpg" alt="redis">
-                <h3>redis</h3>
-            </div> 
-            <div class="tool">
-                <img src="https://habrastorage.org/getpro/habr/upload_files/da0/d6a/f01/da0d6af01197075f0219077b799c3f1e.png" alt="Charles">
-                <h3>Charles</h3>
-            </div>
-            <div class="tool">
-                <img src="https://lh3.googleusercontent.com/OvS-XESj4E3EZWPApMdn6SItwIxsiksGQb7XMnLMwC7Sglf__eXFy-1JbO7lW_9xcxBGZk6F3dwWWj_loLhZ1Bms=s550-w550-h350" alt="BUG Magnet">
-                <h3>BUG Magnet</h3>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Востриков Алексей. Все права защищены.</p>
-    </footer>
-
-</body>
+      </section>
+    </main>
+  </body>
 </html>

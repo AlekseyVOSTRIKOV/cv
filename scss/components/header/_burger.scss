@@ -1,0 +1,16 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &__stick {
+    width: 30px;
+    height: 2px;
+    background-color: $main-white-color;
+  }
+  &__stick_top {
+  }
+  &__stick_middle {
+  }
+  &__stick_bottom {
+  }
+}
