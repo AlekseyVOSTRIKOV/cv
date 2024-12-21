@@ -3,15 +3,27 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+  
+  .fa-brands, .fa-solid {
+    color: $main-white-color;
+    font-size: 3rem;
+    transition: color .3s ease;
+    &:hover {
+      color: $second-color;
+    }
+  }
 }
-.social__link {
-}
-
 @media screen and (width > $max_widht_md) {
   .social {
     position: absolute;
     bottom: 5rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .social__link {
+    color: red;
+    // &:hover {
+    //   color: $second-color;
+    // }
   }
 }

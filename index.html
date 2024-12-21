@@ -15,14 +15,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet" />
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <script type="module" src="./js/index.js"></script>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo" href="https://github.com/AlekseyVOSTRIKOV"
+          target="_blank"
             >@AlekseyVOSTRIKOV</a
           >
 
@@ -65,15 +68,113 @@
             </div>
 
             <div class="social">
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://vk.com/vostrikowww" target="_blank">
                 <i class="fa-brands fa-vk"></i>
               </a>
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://t.me/AlekseyVostrikov" target="_blank">
                 <i class="fa-brands fa-telegram"></i>
               </a>
-              <a class="social__link" href="#">
+              <a class="social__link" href="https://github.com/AlekseyVOSTRIKOV" target="_blank">
                 <i class="fa-brands fa-github"></i>
               </a>
+              <a class="social__link" href="mailto:eshka87@mail.ru" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">Обо мне</h2>
+          <div class="about__top">
+            <img class="about__img" src="./images/avatar2.jpg" alt="Фотография автора">
+            <p class="about__copy">
+              Здравствуйте! Я Востриков Алексей, QA инженер с 3х-летним опытом в ручном тестировании. Стремлюсь обеспечить качество и надежность программного обеспечения. Развиваю в себе hard и soft скилы, не сижу на месте. В данное время изучаю автоматизацию тестирования сайтов и тестирование мобильных приложений.
+            </p>
+          </div>
+          <div class="about__bottom">
+            <h3 class="about__suptitle">QA инструменты</h3>
+
+            <div id="toolsSlider" class="splide" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="tools__card">
+                      <div class="tools__card-top">
+                        <img class="tools__img" src="./images/svg/postman.svg" alt="">
+                        <h4 class="tools__title">Postman</h4>
+                        <div class="tools__line"></div>
+                      </div>
+                      <p class="tools__copy">
+                        HTTP-клиент для тестирования API. HTTP-клиенты тестируют отправку запросов с клиента на сервер и получение ответа от сервера.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tools__card">
+                    <div class="tools__card-top">
+                      <img class="tools__img" src="./images/svg/kibana.svg" alt="">
+                      <h4 class="tools__title">Kibana</h4>
+                      <div class="tools__line"></div>
+                    </div>
+                    <p class="tools__copy">
+                      Открытая платформа визуализации данных, которая позволяет тестировщикам взаимодействовать с данными, создавая интерактивные визуализации.
+                    </p>
+                  </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tools__card">
+                      <div class="tools__card-top">
+                        <img class="tools__img" src="./images/svg/dbeaver.svg" alt="">
+                        <h4 class="tools__title">Postman</h4>
+                        <div class="tools__line"></div>
+                      </div>
+                      <p class="tools__copy">
+                        Приложение, предназначенное для управления базами данных.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tools__card">
+                      <div class="tools__card-top">
+                        <img class="tools__img" src="./images/svg/swagger.svg" alt="">
+                        <h4 class="tools__title">Swagger</h4>
+                        <div class="tools__line"></div>
+                      </div>
+                      <p class="tools__copy">
+                        Инструмент, который помогает разработчикам создавать, документировать и проверять API.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tools__card">
+                      <div class="tools__card-top">
+                        <img class="tools__img" src="./images/svg/Apache Kafka.svg" alt="">
+                        <h4 class="tools__title">Apache Kafka</h4>
+                        <div class="tools__line"></div>
+                      </div>
+                      <p class="tools__copy">
+                        Распределенная система обмена сообщениями между серверными приложениями в режиме реального времени.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tools__card">
+                      <div class="tools__card-top">
+                        <img class="tools__img" src="./images/svg/Jaeger.svg" alt="">
+                        <h4 class="tools__title">Jaeger</h4>
+                        <div class="tools__line"></div>
+                      </div>
+                      <p class="tools__copy">
+                        Система мониторинга и трассировки запросов (distributed tracing), разработанная с открытым исходным кодом.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
             </div>
           </div>
         </div>

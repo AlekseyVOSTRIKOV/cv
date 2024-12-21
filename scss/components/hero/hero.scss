@@ -1,13 +1,9 @@
 @import 'social';
-@import 'fa';
 
 .hero {
   background: url('../images/hero-bg.jpg') center / cover no-repeat;
   height: calc(100vh - $heigth_header_xs);
   position: relative;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   &:before {
     content: '';
     position: absolute;
@@ -16,9 +12,6 @@
     right: 0;
     bottom: 0;
     background-color: rgba($color: $main-black-color, $alpha: 0.85);
-  }
-  .container {
-    height: 100%;
   }
   &__wrapper {
     height: 100%;
@@ -54,7 +47,11 @@
     transform: rotate(90deg);
   }
   &__link {
-    display: inline-block;
+    // display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 6rem;
     padding: 1rem 3rem;
     @include fluid-text(1.6, 2);
