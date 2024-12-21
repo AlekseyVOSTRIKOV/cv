@@ -138,6 +138,7 @@ legend {
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -233,9 +234,6 @@ body {
     bottom: 5rem;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .social__link {
-    color: red;
   }
 }
 .hero {
@@ -342,7 +340,7 @@ body {
   }
 }
 .tools__card {
-  min-width: 29rem;
+  min-width: 28rem;
   height: 100%;
   border: 1px solid #cc005f;
   padding: 1rem;
@@ -438,6 +436,74 @@ body {
   .about__copy {
     text-align: left;
   }
+}
+.contacts {
+  padding: 3rem 0;
+  background-color: #07203F;
+  color: #fff;
+}
+.contacts__title {
+  text-align: center;
+  font-size: clamp(2rem, 2.0833333333vw, 4rem);
+  margin-bottom: 3rem;
+}
+.contacts__copy {
+  max-width: 80%;
+  margin-inline: auto;
+  font-size: clamp(1.6rem, 1.0416666667vw, 2rem);
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+.contacts__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contacts__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 13rem;
+  padding: 1rem;
+  border: 1px solid #cc005f;
+  color: #fff;
+  background-color: #07203F;
+}
+.contacts__link p {
+  text-align: center;
+  font-size: clamp(1.4rem, 0.9375vw, 1.8rem);
+}
+.contacts .fa-brands,
+.contacts .fa-solid {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (width > 690px) {
+  .contacts__links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+  .contacts__link {
+    transition: background-color 0.3s ease;
+  }
+  .contacts__link:hover {
+    background-color: #cc005f;
+  }
+}
+.footer {
+  background-color: #000;
+  padding: 2rem 0;
+}
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1.4rem, 0.9375vw, 1.8rem);
 }
 
 /*# sourceMappingURL=style.css.map */

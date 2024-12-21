@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  
+
   .fa-brands, .fa-solid {
     color: $main-white-color;
     font-size: 3rem;
@@ -19,11 +19,5 @@
     bottom: 5rem;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .social__link {
-    color: red;
-    // &:hover {
-    //   color: $second-color;
-    // }
   }
 }
