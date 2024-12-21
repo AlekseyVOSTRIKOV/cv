@@ -7,10 +7,26 @@
     height: 2px;
     background-color: $main-white-color;
   }
-  &__stick_top {
+  &.active {
+    position: relative;
+    padding: 10px 0;
+    .burger__stick_top {
+      position: absolute;
+      transform: rotate(45deg);
+      transition: transform 0.3s ease;
+    }
+    .burger__stick_middle {
+      display: none;
+    }
+    .burger__stick_bottom {
+      transform: rotate(-45deg);
+      transition: transform 0.3s ease;
+    }
   }
-  &__stick_middle {
-  }
-  &__stick_bottom {
+}
+
+@media screen and (width > $max_widht_md) {
+  .burger {
+    display: none;
   }
 }

@@ -160,6 +160,22 @@ body {
   display: none;
 }
 
+.nav__list {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+@media screen and (width > 690px) {
+  .nav {
+    display: block;
+  }
+}
 .burger {
   display: flex;
   flex-direction: column;
@@ -170,6 +186,37 @@ body {
   height: 2px;
   background-color: #fff;
 }
+.burger.active {
+  position: relative;
+  padding: 10px 0;
+}
+.burger.active .burger__stick_top {
+  position: absolute;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+.burger.active .burger__stick_middle {
+  display: none;
+}
+.burger.active .burger__stick_bottom {
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+@media screen and (width > 690px) {
+  .burger {
+    display: none;
+  }
+}
+.progress-bar {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+  background: #cc005f;
+  z-index: 20;
+}
+
 .header {
   height: 50px;
   background-color: #000;
@@ -415,7 +462,7 @@ body {
     margin-bottom: 3rem;
   }
   .about__copy {
-    line-height: 1.5;
+    line-height: 2;
     text-align: left;
   }
 }

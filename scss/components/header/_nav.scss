@@ -2,8 +2,18 @@
   display: none;
 }
 .nav__list {
+  display: flex;
+  gap: 5rem;
 }
 .nav__item {
 }
 .nav__link {
+  color: $main-white-color;
+  font-size: 2rem;
+  font-weight: 200;
+}
+@media screen and (width > $max_widht_md) {
+  .nav {
+    display: block;
+  }
 }

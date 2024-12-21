@@ -1,0 +1,12 @@
+.progress-bar {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+  background: $second-color;
+  z-index: 20;
+
+  // @media (min-width: $breakpoint_lg) {
+  //   top: $heigth_header_lg - 2px;
+  // }
+}
