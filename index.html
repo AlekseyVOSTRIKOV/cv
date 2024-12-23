@@ -20,7 +20,7 @@
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <script type="module" src="./js/index.js"></script>
   </head>
-  <body>
+  <body id="top">
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -32,10 +32,13 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="">Обо мне</a>
+                <a class="nav__link" href="#top">Главная</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">Контакты</a>
+                <a class="nav__link" href="#about">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -47,10 +50,9 @@
           </button>
         </div>
       </div>
-      <div class="progress-bar" data-name="progress-bar"></div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__wrapper-top">
@@ -197,7 +199,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="contacts__title">Мои контакты</h2>
           <p class="contacts__copy">

@@ -1,12 +1,16 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
 }
 body {
   font-family: $font_family;
   font-size: 1.6rem;
   font-weight: 400;
   color: $main-color;
+  &.active {
+    overflow: hidden;
+  }
 }
 .container {
   max-width: 117rem;
