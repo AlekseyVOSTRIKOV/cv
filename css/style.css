@@ -315,10 +315,10 @@ body.active {
   color: #cc005f;
 }
 
-@media screen and (width > 690px) {
+@media screen and (width > 992px) {
   .social {
     position: absolute;
-    bottom: 5rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -13,10 +13,10 @@
     }
   }
 }
-@media screen and (width > $max_widht_md) {
+@media screen and (width > $max_widht_lg) {
   .social {
     position: absolute;
-    bottom: 5rem;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
   }
