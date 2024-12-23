@@ -382,6 +382,7 @@ body.active {
   font-weight: 200;
   color: #cc005f;
   border: 1px solid #cc005f;
+  cursor: pointer;
 }
 
 @media screen and (width > 992px) {
