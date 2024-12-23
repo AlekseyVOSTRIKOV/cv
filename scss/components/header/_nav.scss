@@ -28,8 +28,9 @@
     padding: 3rem 0;
     color: $main-white-color;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 400;
     @include fluid-text(1.6, 2.4);
+    cursor: pointer;
   }
 }
 @media screen and (width > $max_widht_md) {

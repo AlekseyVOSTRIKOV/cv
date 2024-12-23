@@ -190,8 +190,9 @@ body.active {
   padding: 3rem 0;
   color: #fff;
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 400;
   font-size: clamp(1.6rem, 1.25vw, 2.4rem);
+  cursor: pointer;
 }
 
 @media screen and (width > 690px) {
@@ -326,6 +327,7 @@ body.active {
   background: url("../images/hero-bg.jpg") center/cover no-repeat;
   height: calc(100vh - 50px);
   position: relative;
+  padding: 3rem 0;
 }
 .hero:before {
   content: "";

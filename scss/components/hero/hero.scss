@@ -4,6 +4,7 @@
   background: url('../images/hero-bg.jpg') center / cover no-repeat;
   height: calc(100vh - $heigth_header_xs);
   position: relative;
+  padding: 3rem 0;
   &:before {
     content: '';
     position: absolute;

@@ -20,8 +20,8 @@
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
     <script type="module" src="./js/index.js"></script>
   </head>
-  <body id="top">
-    <header class="header">
+  <body data-name="topBody">
+    <header class="header" data-name="header">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo" href="https://github.com/AlekseyVOSTRIKOV"
@@ -32,13 +32,13 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#top">Главная</a>
+                <a class="nav__link" data-btn="menuItem" data-target="topBody">Главная</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#about">Обо мне</a>
+                <a class="nav__link" data-btn="menuItem" data-target="about">Обо мне</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#contacts">Контакты</a>
+                <a class="nav__link" data-btn="menuItem" data-target="contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <section class="about" id="about">
+      <section class="about" data-name="about">
         <div class="container">
           <h2 class="about__title">Обо мне</h2>
           <div class="about__top">
@@ -199,7 +199,7 @@
         </div>
       </section>
 
-      <section class="contacts" id="contacts">
+      <section class="contacts" data-name="contacts">
         <div class="container">
           <h2 class="contacts__title">Мои контакты</h2>
           <p class="contacts__copy">
