@@ -1,0 +1,9 @@
+.footer {
+  background-color: $main-black-color;
+  padding: 2rem 0;
+  &__copyright {
+    text-align: center;
+    color: $main-white-color;
+    @include fluid-text(1.4, 1.8);
+  }
+}

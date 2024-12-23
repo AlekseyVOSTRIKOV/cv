@@ -1,0 +1,23 @@
+.social {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  .fa-brands, .fa-solid {
+    color: $main-white-color;
+    font-size: 3rem;
+    transition: color .3s ease;
+    &:hover {
+      color: $second-color;
+    }
+  }
+}
+@media screen and (width > $max_widht_lg) {
+  .social {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

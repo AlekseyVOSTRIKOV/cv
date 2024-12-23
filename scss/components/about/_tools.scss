@@ -1,0 +1,31 @@
+.tools {
+  &__card {
+    min-width: 28rem;
+    height: 100%;
+    border: 1px solid $second-color;
+    padding: 1rem;
+    text-align: center;
+
+    &-top {
+      margin-bottom: 3rem;
+    }
+  }
+  &__img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    @include fluid-text(1.6, 2);
+    margin-bottom: 1rem;
+  }
+  &__line {
+    width: 4rem;
+    height: 0.1rem;
+    background-color: $main-color;
+    margin-inline: auto;
+  }
+  &__copy {
+    @include fluid-text(1.4, 1.8);
+  }
+}

@@ -1,0 +1,89 @@
+@import 'social';
+
+.hero {
+  background: url('../images/hero-bg.jpg') center / cover no-repeat;
+  height: calc(100vh - $heigth_header_xs);
+  position: relative;
+  padding: 3rem 0;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: $main-black-color, $alpha: 0.85);
+  }
+  &__wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__subtitle {
+    color: $second-color;
+    font-weight: 200;
+    @include fluid-text(2, 3);
+    margin-bottom: 1rem;
+  }
+  &__title {
+    color: $main-white-color;
+    @include fluid-text(2.3, 5);
+    margin-bottom: 2rem;
+  }
+  &__suptitle {
+    color: $main-white-color;
+    font-weight: 100;
+    @include fluid-text(2, 3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  &__sep {
+    transform: rotate(90deg);
+  }
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6rem;
+    padding: 1rem 3rem;
+    @include fluid-text(1.6, 2);
+    font-weight: 200;
+    color: $second-color;
+    border: 1px solid $second-color;
+    cursor: pointer;
+  }
+}
+@media screen and (width > $max_widht_lg) {
+  .hero {
+    &__suptitle {
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 5rem;
+    }
+    &__sep {
+      transform: none;
+    }
+    &__link {
+      transition: color .5s ease, border-color .5s ease;
+      &:hover {
+        color: $main-white-color;
+        border-color: $main-white-color;
+      }
+    }
+  }
+}
+@media screen and (width > $max_widht_xl) {
+  .hero {
+    &__suptitle {
+      margin-bottom: 10rem;
+    }
+  }
+}

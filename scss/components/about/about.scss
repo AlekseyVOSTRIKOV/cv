@@ -1,0 +1,72 @@
+@import 'experience';
+@import 'tools';
+
+.about {
+  padding: 3rem 0;
+  &__top {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &__title {
+    text-align: center;
+    @include fluid-text(2, 4);
+    margin-bottom: 3rem;
+  }
+  &__img {
+    max-width: 30rem;
+    // width: 100%;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  }
+  &__copy {
+    max-width: 50rem;
+    margin-inline: auto;
+    @include fluid-text(1.6, 2);
+    text-align: justify;
+    &.experience {
+      text-align: center;
+    }
+  }
+  &__suptitle {
+    @include fluid-text(1.8, 3);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (width > $max_widht_md) {
+  .about {
+    padding: 3rem 0;
+    &__top {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 3rem;
+    }
+    &__img {
+      max-width: 35rem;
+      margin-bottom: 3rem;
+    }
+    &__copy {
+      line-height: 2;
+      text-align: left;
+    }
+  }
+}
+@media screen and (width > $max_widht_xl) {
+  .about {
+    padding: 3rem 0;
+    &__top {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 3rem;
+    }
+    &__img {
+      max-width: 40rem;
+      margin-bottom: 3rem;
+    }
+    &__copy {
+      text-align: left;
+    }
+  }
+}
